@@ -1,0 +1,20 @@
+public class x^n {
+    
+public static int calcpower(int x,int n){
+if (n==0) {
+    return 1;  //base casc 1
+}
+if (x==0) {
+    return 0;  //base case 2
+}
+int xpownm1=calcpower(x,n-1);
+int xpown = x*xpownm1;
+return xpown ;
+}
+
+public static void main(String args[]);
+int x=2,n=5;
+int ans=calcpower(x,n);
+System.out.println(ans);
+}
+}
